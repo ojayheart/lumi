@@ -1,19 +1,19 @@
 {
-  "name": "elevenlabs-conversational-ai",
-  "version": "0.1.0",
+  "name": "lumi-voice-assistant",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 5000 -H 0.0.0.0",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 3000 -H 0.0.0.0",
-    "lint": "next lint"
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@elevenlabs/react": "^0.6.2",
+    "@elevenlabs/react": "^0.13.0",
     "@google/generative-ai": "^0.24.1",
     "@octokit/rest": "^22.0.1",
     "@radix-ui/react-slot": "^1.1.0",
-    "@replit/object-storage": "^1.0.0",
     "airtable": "^0.12.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",

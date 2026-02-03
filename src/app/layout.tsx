@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     description: "Experience personalized wellness guidance with Lumi, your AI wellness companion powered by Aro Ha.",
     images: ['/logo-aroha.png'],
   },
-  metadataBase: new URL(process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : process.env.REPL_URL ? `https://${process.env.REPL_URL}` : 'http://localhost:3000'),
+  metadataBase: new URL(process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000'),
 };
 
 export default function RootLayout({

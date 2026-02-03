@@ -15,7 +15,8 @@ export async function POST() {
     const base = airtable.base(process.env.AIRTABLE_BASE_ID!);
     
     // Try to list a single record to verify the connection works
-    await base('Guest Profiles').select({ maxRecords: 1 }).firstPage();
+    const tableId = process.env.AIRTABLE_TABLE_ID || 'Guest Profiles';
+    await base(tableId).select({ maxRecords: 1 }).firstPage();
     
     return NextResponse.json({ success: true, message: 'Airtable base setup successful' });
   } catch (error) {
