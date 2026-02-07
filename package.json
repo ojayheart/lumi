@@ -3,11 +3,12 @@
   "version": "0.2.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "check": "tsc --noEmit & next lint & wait"
   },
   "dependencies": {
     "@ai-sdk/google": "^3.0.20",
@@ -33,6 +34,7 @@
   },
   "devDependencies": {
     "@types/node": "^20",
+    "babel-plugin-react-compiler": "1.0.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "postcss": "^8",
